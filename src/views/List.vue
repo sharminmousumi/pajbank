@@ -6,9 +6,9 @@
         </div>
         <div id="Json" v-for="Customer in ApiData" v-bind:key="Customer.id">
             <p><img :src="image" style="width: 150px; height:100px"/></p>
-            <p id="id">ID:{{ Customer.holder_id }}</p>
-            <p id="Name">Name:{{ Customer.holder }}</p>
-            <p id="age">AGE:{{ Customer.holder_email }}</p>
+            <p id="id">ID:{{ Customer.id }}</p>
+            <p id="Name">Name:{{ Customer.name }}</p>
+            <p id="age">AGE:{{ Customer.age }}</p>
             <p id="phone">Phone:{{ Customer.phone }}</p>
         </div>
        
@@ -49,7 +49,7 @@ export default {
        
         getData() {
             axios
-                .get('https://github.com/sharminmousumi/pajbank/blob/master/db.json')
+                .get('db.json')
                 .then(response => (this.ApiData = response.data))
                 .catch(error => {
                     console.log(error)
