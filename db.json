@@ -1,0 +1,41 @@
+[{
+    "id":1,
+    "name":"Sixten Abel",
+    "age":20,
+    "imgName":"customer.png",
+    "phone" :"0046798456"
+    
+ },
+ 
+ {
+     "id":2,
+     "name":"Maria Johnson",
+     "age":22,
+     "imgName":"customer.png",
+     "phone" :"00467984568"
+     
+  },
+  {
+     "id":3,
+     "name":"Anabella Thoms",
+     "age":34,
+     "imgName":"customer.png",
+     "phone" :"00467984545"
+     
+  },
+  {
+     "id":4,
+     "name":"John Berry",
+     "age":25,
+     "imgName":"customer.png",
+     "phone" :"00467934568"
+     
+  },
+  {
+     "id":5,
+     "name":"Andreas Karlsson",
+     "age":28,
+     "imgName":"customer.png",
+     "phone" :"00467978568"
+     
+  }]
