@@ -17,7 +17,7 @@ export default {
 #nav {
     position: relative;
     background-color: #2c3e50;
-    font-family: cursive;
+    font-family: fantasy;
     height: 100%;
     padding: 30px 30px 30px 0;
     grid-column-start: 1;

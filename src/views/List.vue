@@ -1,18 +1,23 @@
 <template>
     <div class="container">
-        <div id="navbar">
-            <div class="pajbank"><p>PAJONLINE BANK</p></div>
+        <div id="navbar" >
+            <div class="pajbank">PAJONLINE BANK</div>
             <h1>Customer List</h1>
         </div>
-        <div id="Json" v-for="Customer in ApiData" v-bind:key="Customer.id">
-            <p><img :src="image" style="width: 150px; height:100px"/></p>
-            <p id="id">ID:{{ Customer.id }}</p>
-            <p id="Name">Name:{{ Customer.name }}</p>
-            <p id="age">AGE:{{ Customer.age }}</p>
-            <p id="phone">Phone:{{ Customer.phone }}</p>
-        </div>
+        
        
-    </div>
+        <div id="Json" class="container" v-for="Customer in ApiData" v-bind:key="Customer.id">
+            <p><img :src="image" style="width: 150px; height:100px"/></p>
+            <p id="id">ID: {{ Customer.id }}</p>
+            <p id="Name">Name: {{ Customer.name}}</p>
+            <p id="email">Email:{{ Customer.email}}</p>
+            <p id="balance">Balance: {{ Customer.balance }} sek</p>
+            <p id="currency">Phone: {{ Customer.phone}}</p>
+            <button id="deletebtn" v-on:click="deleteBtn(Customer.id)" class="btn btn-success">Delete</button>
+            
+        </div>
+     
+ </div>
 </template>
 
 <script>
@@ -23,6 +28,8 @@ export default {
     name: "List",
     data() {
         return {
+            ifCustomer:false,
+            enable:false,
              image: image,
             ApiData: null,
 
@@ -37,19 +44,15 @@ export default {
       components: {
         
     },
-    created() {
-        // fetch the data when the view is created and the data is
-        // already being observed
+    created(){
         this.getData();
     },
   
-    methods: {
-         
-        
-       
+  
+    methods: { 
         getData() {
             axios
-                .get('db.json')
+                .get('http://localhost:3000/accounts')
                 .then(response => (this.ApiData = response.data))
                 .catch(error => {
                     console.log(error)
@@ -57,7 +60,24 @@ export default {
                 })
       
         },
+        deleteBtn(id){
+       axios
+      .delete('http://localhost:3000/accounts/'+id)
+      .then(response => {(this.ApiData = response.data)
+      if(response!==null){
+        this.getData();
+      }
+      })
+      .catch(error => {
+        console.log(error)
+        this.errored = true
+      })
+      
+   },
+       
+      
     },
+    
 };
 </script>
 <style lang="scss">
@@ -76,5 +96,15 @@ export default {
 }
 .pajbank{
   margin-left: 800px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+}
+#Json > button{
+    margin-left: 300px;
+    
+}
+#deletebtn{
+    width: 200px;
 }
 </style>

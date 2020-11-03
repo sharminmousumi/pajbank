@@ -1,13 +1,14 @@
 <template>
 <div>
-<div class="pajbank"><p>PAJONLINE BANK</p></div>
-<div class="contact">
-<h1>Contact Us</h1>
-</div>
-<div class="info">
+<div class="pajbank">PAJONLINE BANK</div>
+<div class="bottom"></div>
+<div class="left">
+<div class="container p-3 my-3 text-black">
+  <h1>Contact Us</h1>
     <p>Contact Address: Molnvädersgatan 41 Göteborg-4235</p>
     <p>Mail Address:  info@pajonline banking.com</p>
     <p>Phone Number: 00467894567</p>
+</div>
 </div>
 </div>
 </template>
@@ -22,12 +23,19 @@ export default {
 <style lang="scss">
 .pajbank{
   margin-left: 800px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+  
 }
-.contact{
-  text-align: center;
+
+
+.left{
+  margin-left: 150px;
+  
 }
-.info{
-    text-align: center;
-    margin-top: 100px;
+.bottom{
+  margin-bottom: 100px;
 }
 </style>

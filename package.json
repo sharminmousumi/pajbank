@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "json:server": "json-server --watch db.json"
   },
   "dependencies": {
     "axios": "^0.20.0",
@@ -15,10 +16,10 @@
     "eslint-loader": "^2.1.2",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
+    "json-server": "^0.16.2",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9",
-    "node-sass": "^4.14.1",
     "vee-validate": "^3.4.1",
     "vue": "^2.6.11",
     "vue-router": "^3.4.6",
@@ -33,7 +34,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
     "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
     "sass-loaderue add unit-jest": "^10.0.3",
     "vue-template-compiler": "^2.6.11"
   },
@@ -59,6 +62,14 @@
   "description": "```\r npm install\r ```",
   "main": "babel.config.js",
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Sharmin Mousumi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharminmousumi/pajbank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sharminmousumi/pajbank/issues"
+  },
+  "homepage": "https://github.com/sharminmousumi/pajbank#readme"
 }

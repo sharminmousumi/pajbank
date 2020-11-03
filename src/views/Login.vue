@@ -1,11 +1,11 @@
 <template>
     <div id="login">
-        <div class="pajbank"><p>PAJONLINE BANK</p></div>
+        <div class="pajbank">PAJONLINE BANK</div>
         <h1>Login</h1>
         <div class="log">
         <input type="text" name="username" v-model="input.username" placeholder="Username" /><br>
         <input type="password" name="password" v-model="input.password" placeholder="Password" /><br>
-        <button type="button" v-on:click="login()">Login</button>
+        <button type="button" class="btn btn-success" v-on:click="login()">Login</button>
         </div>
     </div>
     
@@ -42,6 +42,9 @@
 <style lang="scss">
 .pajbank{
   margin-left: 800px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
 }
 .log{
 text-align: center;
@@ -56,7 +59,7 @@ text-align: center;
 }
 .log >button{
     padding: 5px;
-    background-color: lightcyan;
+    width: 100px;
 }
     
 </style>
