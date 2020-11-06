@@ -14,21 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body
     style="background-color: #96B6C1;
   "
   >
-  <script>
-    Vue.component('validation-observer', VeeValidate.ValidationObserver);
-
-    Vue.component('validation-provider', VeeValidate.ValidationProvider);
-  </script>
-  <script>
-    Object.keys(VeeValidateRules).forEach(rule => {
-      VeeValidate.extend(rule, VeeValidateRules[rule]);
-    });
-  </script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/vee-validate@3.3.8/dist/rules.umd.js"></script>
     <noscript>
       <strong

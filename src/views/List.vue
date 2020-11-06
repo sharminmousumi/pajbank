@@ -24,10 +24,12 @@
 import axios from "axios";
 import image from "../assets/image/customer.png";
 
+
 export default {
     name: "List",
     data() {
         return {
+            
             ifCustomer:false,
             enable:false,
              image: image,
@@ -42,8 +44,10 @@ export default {
         };
     },
       components: {
+         
         
     },
+    
     created(){
         this.getData();
     },

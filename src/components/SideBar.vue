@@ -16,7 +16,7 @@ export default {
 <style scoped>
 #nav {
     position: relative;
-    background-color: #2c3e50;
+    background-color: #E59D31;
     font-family: fantasy;
     height: 100%;
     padding: 30px 30px 30px 0;
@@ -32,7 +32,7 @@ div > * {
 .nav_el {
     font-weight: bold;
     margin: 20px 50px 20px 0;
-    background-color: #ffda7b;
+    background-color: #BEB822;
     width: 200px;
     height: 70px;
     border-radius: 0 8px 8px 0;
@@ -41,12 +41,12 @@ div > * {
     justify-content: center;
 }
 .nav_el:hover {
-    background-color: #ff937b;
+    background-color: wheat;
 }
 #nav:last-child {
     margin-bottom: 20px;
 }
 .router-link-exact-active {
-    background-color: #ff937b;
+    background-color: wheat;
 }
 </style>

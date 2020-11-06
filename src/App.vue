@@ -50,7 +50,7 @@ export default {
     color: #2c3e50;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: #96b6c1;
+    background-color: #EBB057;
 }
 #main_content {
     grid-column-start: 2;

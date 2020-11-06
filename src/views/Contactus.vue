@@ -22,7 +22,7 @@ export default {
 </script>
 <style lang="scss">
 .pajbank{
-  margin-left: 800px;
+  margin-left: 1000px;
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: bold;
@@ -32,7 +32,7 @@ export default {
 
 
 .left{
-  margin-left: 150px;
+  margin-left: 300px;
   
 }
 .bottom{
