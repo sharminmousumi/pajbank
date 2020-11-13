@@ -8,13 +8,6 @@
       "phone": "0761996363"
     },
     {
-      "name": "adiman",
-      "id": "13",
-      "email": "alamrana1@gmail.com",
-      "balance": "45",
-      "phone": "0761996363"
-    },
-    {
       "name": "albin Hussain",
       "id": "18",
       "email": "sharminmousumi001@gmail.com",
@@ -48,6 +41,20 @@
       "email": "kamalhossain@yahoo.com",
       "balance": "12300",
       "phone": "0789234545"
+    },
+    {
+      "name": "Molly",
+      "id": "34",
+      "email": "Molly@gmail.com",
+      "balance": "3000",
+      "phone": "0078554266554"
+    },
+    {
+      "name": "anika",
+      "id": "46",
+      "email": "anika@yahoo.com",
+      "balance": "5000",
+      "phone": "09876554322"
     }
   ]
 }

@@ -86,9 +86,9 @@ export default {
 </script>
 <style lang="scss">
 #Json{
-    border:1px solid cadetblue;
+    border:1px solid  #f0b45a;
     font-family:  'Times New Roman', serif;
-    background-color: cadetblue;
+    background-color:  #f0b45a;
     margin-bottom: 10px;    
     color: cornsilk;
     
@@ -110,5 +110,8 @@ export default {
 }
 #deletebtn{
     width: 200px;
+}
+#navbar > h1{
+    margin-left: 300px;
 }
 </style>
