@@ -1,17 +1,22 @@
 <template>
  <div>
-<div class="pajbank">PAJONLINE BANK</div>
-<div class="jumbotron text-center">
+
+
 <div class="home">
-<h1>Home</h1>
-<div class="text">
-<div class="container p-3 my-3 bg-cadetblue text-black"><h1>Pajonline Bank är största bank</h1>
-Användning av cookies och behandling av personuppgifter.Vi använder information från tredjepartscookies. Vi behandlar personuppgifter i att komma ihåg dina inställningar,förbättra våra tjänster,mäta trafik,visa dig relevanta meddelanden och spåra din användning av vår webbplats. Du kan välja att acceptera vår användning av alla cookies,eller klicka på cookieinställningar för att acceptera vår användning av funktions-statistik-och marknadsföringscookies eller för att endast acceptera vår nödvändiga cookies.Ditt samtycke omfattar användning tillhörande behandling av personuppgifter.Om du vill ha mer information klickar du på användning av cookies och behandling av personuppgifter.Om du vill veta mer om hur du återkallar ditt samtycke klickar du på länken för cookieriktlinjer längst ned på vår webbplats.
-OK till alla Cookieinställningar</div>
+
+
+<div class="container">
+  <div class="row justify-content-around">
+ <div class="col-12 rounded shadow">
+<h1>Paj Online Bank är största bank</h1>
+<p class="lead">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+  </div>
+  </div>
 </div>
 </div>
+ 
 </div>
- </div>
+
 </template>
 
 <script>
@@ -26,27 +31,10 @@ export default {
 <style lang="scss">
 .pajbank{
   margin-left: 800px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: bold;
-}
-.home{
-  text-align: center;
-}
-.text{
-  text-align: justify;
-  text-justify: inter-word;
-  font-family:Source Sans Pro;
-  font-style: normal;
-  font-size: 20px;
-  margin-left: 70px;
-  margin-right: 17px;
-  margin-top:20px;
   
 }
-.jumbotron {
-  background-color: #f0b45a;
-  margin-left: 50px;
-  width:auto;
-}
+
+
 </style>

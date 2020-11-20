@@ -55,6 +55,13 @@
       "email": "anika@yahoo.com",
       "balance": "5000",
       "phone": "09876554322"
+    },
+    {
+      "name": "payel",
+      "id": "22",
+      "email": "payel@gmail.com",
+      "balance": "12345",
+      "phone": "098765432"
     }
   ]
 }

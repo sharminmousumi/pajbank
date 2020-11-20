@@ -1,14 +1,14 @@
 <template>
     <div id="login">
-        <div class="pajbank">PAJONLINE BANK</div>
-        <div class="jumbotron text-center">
+        
+        
         <h1>Login</h1>
         <div class="log">
         <input type="text" name="username" v-model="input.username" placeholder="Username" /><br>
         <input type="password" name="password" v-model="input.password" placeholder="Password" /><br>
         <button type="button" class="btn btn-success" v-on:click="login()">Login</button>
         </div>
-    </div>
+   
     </div>
     
 </template>

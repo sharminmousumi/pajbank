@@ -1,12 +1,12 @@
 <template>
 <div>
-<div class="pajbank" >PAJONLINE BANK</div>
+
 <div class="customer">
 
 </div>
  <div class="container my-3">
     <div class="row justify-content-around">
-      <div class="col-6 rounded shadow">
+      <div class="col-5 rounded shadow">
         <h1 class="py-3">Become a Customer</h1>
         <div id="signup-form">
  <div id="form">

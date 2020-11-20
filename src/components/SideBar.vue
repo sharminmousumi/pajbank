@@ -1,10 +1,17 @@
-<template>
-    <div id="nav">
-        <router-link to="/" class="nav_el">Home</router-link>
+<template><b-navbar
+    toggleable="md"
+    type="dark"
+    variant="info" id="top">
+    <b-navbar-brand id="daj">PAJ ONLINE BANK</b-navbar-brand>
+    <b-navbar-nav id="Nav">
+      
+          <router-link to="/" class="nav_el">Home</router-link>
         <router-link to="/login" class="nav_el">Login</router-link>
         <router-link to="/Becomecustomer" class="nav_el">Become Customer</router-link>
         <router-link to="/Contactus" class="nav_el">Contact Us</router-link>
-    </div>
+    </b-navbar-nav>
+  </b-navbar>
+ 
 </template>
 
 <script>
@@ -14,39 +21,40 @@ export default {
 </script>
 
 <style scoped>
-#nav {
-    position: relative;
-    background-color: #E59D31;
-    font-family: fantasy;
-    height: 100%;
-    padding: 30px 30px 30px 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    display: flex;
-    flex-direction: column;
+.nav_el{
+  margin-right: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display:inline-block;
 }
-div > * {
-    text-decoration: none;
-    color: black;
+.nav_el:hover{
+  color:rgb(0, 255, 149);
 }
-.nav_el {
-    font-weight: bold;
-    margin: 20px 50px 20px 0;
-    background-color: #BEB822;
-    width: 200px;
-    height: 70px;
-    border-radius: 0 8px 8px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+#Nav{
+    margin-left: 150px;
+    
+    
 }
-.nav_el:hover {
-    background-color: wheat;
+#daj{
+  color: black;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display:inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+                    
 }
-#nav:last-child {
-    margin-bottom: 20px;
+
+#top{
+margin-bottom: 50px;
 }
-.router-link-exact-active {
-    background-color: wheat;
-}
+
+
+
 </style>

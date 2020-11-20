@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div id="navbar" >
-            <div class="pajbank">PAJONLINE BANK</div>
+            
             <h1>Customer List</h1>
         </div>
         
@@ -86,9 +86,9 @@ export default {
 </script>
 <style lang="scss">
 #Json{
-    border:1px solid  #f0b45a;
+    border:1px solid  #17a2b8;
     font-family:  'Times New Roman', serif;
-    background-color:  #f0b45a;
+    background-color:  #17a2b8;
     margin-bottom: 10px;    
     color: cornsilk;
     
@@ -112,6 +112,8 @@ export default {
     width: 200px;
 }
 #navbar > h1{
-    margin-left: 300px;
+    text-align: center;
+    margin-bottom: 40px;
 }
+
 </style>
